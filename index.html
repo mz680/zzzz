@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicy Shop - Toko Jus Segar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">🧃 Juicy Shop</div>
+            <nav class="nav-menu">
+                <a href="#beranda">Beranda</a>
+                <a href="#produk">Produk</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒 <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Juicy Shop</h1>
+            <p>Jus Segar 100% Alami - Sehat & Lezat</p>
+            <button class="cta-btn" onclick="document.getElementById('produk').scrollIntoView()">Belanja Sekarang</button>
+        </div>
+    </section>
+
+    <section id="produk" class="produk">
+        <div class="container">
+            <h2>Koleksi Produk Kami</h2>
+            <div class="produk-grid" id="produk-grid">
+                <!-- Produk akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <aside class="cart-panel" id="cart-panel">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="close-btn" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart">Keranjang kosong</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total:</strong>
+                <span id="cart-total">Rp 0</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+            <button class="clear-cart-btn" onclick="clearCart()">Kosongkan</button>
+        </div>
+    </aside>
+
+    <section id="kontak" class="kontak">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="kontak-info">
+                <p>📧 Email: info@juicyshop.com</p>
+                <p>📱 WhatsApp: 0812-3456-7890</p>
+                <p>📍 Alamat: Jl. Jus Segar No. 123, Kota Sehat</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Juicy Shop. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
